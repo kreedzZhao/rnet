@@ -1,6 +1,6 @@
 [package]
 name = "rnet"
-version = "3.0.0-rc14"
+version = "3.0.0"
 description = "An ergonomic Python HTTP client with TLS fingerprint"
 license = "Apache-2.0"
 readme = "README.md"
@@ -59,7 +59,8 @@ wreq = { version = "6.0.0-rc.23", features = [
     "zstd",
     "ws",
 ] }
-wreq-util = { version = "3.0.0-rc.7", features = ["emulation-rand"] }
+#wreq-util = { version = "3.0.0-rc.7", features = ["emulation-rand"] }
+wreq-util = { git = "https://github.com/kreedzZhao/wreq-util", branch = "main", features = ["emulation-rand"] }
 hickory-resolver = "0.25.2"
 cookie = "0.18"
 mimalloc = { version = "0.1.43", default-features = false, features = [

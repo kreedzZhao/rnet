@@ -140,4 +140,10 @@ impl EmulationOption {
     fn random() -> Self {
         Self(wreq_util::Emulation::random())
     }
+
+    /// random ja4
+    #[staticmethod]
+    fn random_ja4() -> Self {
+        Self(wreq_util::Emulation::random_ja4())
+    }
 }

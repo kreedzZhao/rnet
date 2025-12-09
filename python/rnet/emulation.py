@@ -198,3 +198,7 @@ class EmulationOption:
             ```
         """
         ...
+
+    @staticmethod
+    def random_ja4() -> "EmulationOption":
+        ...
